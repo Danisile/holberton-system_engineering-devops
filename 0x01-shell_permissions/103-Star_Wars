@@ -1,2 +1,2 @@
 #!/bin/bash
-terminal towel.StarWars.ln
+telnet towel.blinkenlights.nl
