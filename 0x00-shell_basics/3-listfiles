@@ -1,2 +1,2 @@
 #!/bin/bash
-els -l
+els -la .
