@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# display the number of times a specific IP and HTTP code is found in the apache log access file
+#
+# Group clients listed in Apache access log by IP and HTTP status code
 
-awk '{ print $1,$9 }' apache-access.log | sort | uniq -c | sort -rn
+awk '{ print $1, $9 }' "${1-apache-access.log}" | sort | uniq -c | sort -nr
